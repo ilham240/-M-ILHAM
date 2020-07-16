@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	//deklarasi variable
+	float total_pembelian , diskon , total_belanja;
+	float uang_konsumen;
+	//minta input dari user total pembelian
+	cout << "masukkan total pembelian = ";
+	cin >> total_pembelian;
+	diskon = 0;
+	if ( total_pembelian >= 500000 ){
+		diskon = 0.10 * total_pembelian;
+	}
+	total_belanja = total_pembelian - diskon;
+	cout << "total Diskon = " << diskon;
+	cout << endl;
+	cout << "total Belanja = " << total_belanja;
+	cout << endl;
+	cout << "Masukkan Uang Konsumen " ;
+	cout << endl;
+	cin >> uang_konsumen ;
+	cout << "Uang Kembalian = " << uang_konsumen - total_belanja;
+}
